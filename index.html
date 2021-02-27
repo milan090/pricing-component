@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="Pricing Componetn UI">
+    <meta property="og:description" content="Minimalistic Pricing Component UI.">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/website-preview.jpg">
+    <meta property="og:url" content="/">
+    <meta name="theme-color" content="#10d5c2">
+
+    <meta name="twitter:card" content="/images/website-preview.jpg">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main id="main">
+      <div id="container">
+        <div class="text-center" id="header">
+          <h1 id="heading">Simple, traffic-base pricing</h1>
+          <p class="text-grayish-blue">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </div>
+        <div id="pricing-component">
+          <div class="container">
+            <div id="pricing-info">
+              <!-- Pages views and pricing stuff here -->
+
+              <!-- Include K or M at end according to value -->
+              <p id="pageviews" class="text-grayish-blue">
+                <span id="pageviews-value">100K</span> PAGEVIEWS
+              </p>
+
+              <!-- Change price-value accordingly -->
+              <p id="price">
+                <span id="price-value">$16.00</span>
+                <span class="text-grayish-blue">/month</span>
+              </p>
+            </div>
+
+            <div id="views-slider">
+              <input
+                type="range"
+                min="0"
+                max="4"
+                value="1"
+                step="1"
+                class="slider"
+                id="views-slider-range"
+              />
+            </div>
+
+            <div class="text-grayish-blue" id="billing-type">
+              <span>Monthly Billing</span>
+              <label class="switch">
+                <input type="checkbox" id="billing-toggle" />
+                <span class="slider round"></span>
+              </label>
+              <span>Yearly Billing</span>
+              <span id="discount">25% discount</span>
+            </div>
+          </div>
+
+          <hr />
+
+          <div id="cta-component" class="container">
+            <ul id="features-list" class="text-grayish-blue">
+              <li class="li">Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+
+            <button id="cta-btn">Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+  <script src="/script.js"></script>
+</html>
